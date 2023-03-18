@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { LoginPage } from "../auth";
-import { CaleandarPage } from "../calendar";
+import { CalendarPage } from "../calendar";
 import { useAuthStore } from "../hooks";
 
 export const AppRouter = () => {
@@ -33,7 +33,7 @@ export const AppRouter = () => {
                 : 
                     (
                         <>
-                            <Route path="/" element={ <CaleandarPage /> } />
+                            <Route path="/" element={ <CalendarPage /> } />
                             <Route path="/*" element={ <Navigate to="/" /> } />                
                         </>
                     )
