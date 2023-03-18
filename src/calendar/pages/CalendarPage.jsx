@@ -20,9 +20,7 @@ export const CalendarPage = () => {
     const [lastView, setLastView] = useState(localStorage.getItem('lastView') || 'week');
 
     useEffect(() => {
-        setTimeout(() => {
-            startLoadingEvents();
-        }, 2000);
+        startLoadingEvents();
     }, []);
 
     const eventStyleGetter = ( event, start, end, isSelected ) => {
